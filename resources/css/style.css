@@ -1,0 +1,97 @@
+/* Universal */
+/* Ubuntu: latin alphabet */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v11/4iCv6KVjbNBYlgoCjC3jsGyN.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container {
+    width: 960px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    height: 4rem;  
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company-logo {
+    display: flex;
+    align-items: center;
+    font-family: "Ubuntu";
+    font-size: 2rem;
+}
+.company-logo img {
+    padding-left: 1.5rem;
+    height: 2.5rem;
+ }
+
+ .grey-text {
+     color: darkgray;
+ }
+ 
+ ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+ }
+
+ ul li {
+     padding-left: 1rem;
+ }
+
+ ul li:last-child {
+    padding-right: 1.5rem;
+ }
+ 
+ ul li a {
+    text-decoration: none;
+ }
+
+ nav {
+    display: inline-flex;
+    align-content: center;
+    font-family: "Ubuntu"; /*TEMP: using Ubuntu font but another woudl be better */
+ }
+
+ .mobile-menu {
+    display: none;
+}
+
+/* Banner */
+
+.banner {
+    display: flex;
+    font-family: "Ubuntu"; /*TEMP: using Ubuntu font but another woudl be better */
+    background: darkgray;
+}
+
+.banner img {
+    height: auto;
+    width: 60%;
+    padding: 2rem 1.5rem;
+}
+
+.banner div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-column .large {
+    font-size: 3rem;
+}
+
+.right-column .small {
+    font-size: 1.5rem;
+}

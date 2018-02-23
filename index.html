@@ -10,35 +10,46 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="logo">
-            <span>COLMAR ACADEMY</span>
+    <header class="container">
+        <!-- Logo -->
+        <div class="company-logo">
+            <img src="./resources/images/ic-logo.svg" alt="logo">
+            <span>COLMAR</span><span class="grey-text">ACADEMY</span>
         </div>
-        <div class="menu">
-            <ul>
-                <li>On Campus</li>
-                <li>Online</li>
-                <li>Our companies</li>
-                <li>Sign in</li>
+        <!-- Menu  -->
+        <nav>
+            <ul class="menu">
+                <li><a href="#">On campus</a></li>
+                <li><a href="#">Online</a></li>
+                <li><a href="#">For companies</a></li>
+                <li><a href="#">Sign in</a></li>
             </ul>
-        </div>
+            <ul class="mobile-menu">
+                <li><a href="#"><img src="./resources/images/ic-logo.svg" alt="logo"></a></li>
+                <li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="logo"></a></li>
+                <li><a href="#"><img src="./resources/images/ic-online.svg" alt="logo"></a></li>
+                <li><a href="#"><img src="./resources/images/ic-login.svg" alt="logo"></a></li>
+            </ul>        
+        </nav>
     </header>
 
     <!-- Banner -->
-    <div class="banner">
+    <div class="banner container">
         <img src=".\resources\images\banner.jpg" alt="banner">
-        <span>Learn something new everyday</span>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-        <div>Start here</div>
+        <div class="right-column">
+            <span class="large">Learn something new everyday</span>
+            <span class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            <div>Start here</div>    
+        </div>
     </div>
 
     <!-- -->
-    <div class="information">
+    <div class="information container">
         <div class="">
             <img src=".\resources\images\information-main.jpg" alt="">
             <span>It doesn't hurt to keep practicing</span>
             <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>  
-            <p>Emmanual, Sr Stratagist at Hiring.com</p>         
+            <p>Emmanual, Sr Strategist at Hiring.com</p>         
         </div>
         <div class="orientation">
             <img src=".\resources\images\information-orientation.jpg" alt="">
@@ -59,7 +70,7 @@
     </div>
 
     <!-- -->
-    <div class="coursework">
+    <div class="coursework container">
         <div class="subject">
             <img src=".\resources\images\course-software.jpg" alt="Software">
             <span>Software Engineering</span>
@@ -99,7 +110,7 @@
     </div>
 
     <!-- Thesis Exibit -->
-    <div class="thesis-exibit">
+    <div class="thesis-exibit container">
         <div>
             <video src=".\resources\video\thesis.mp4"></video>
             <span>Reimagine urban</span>
