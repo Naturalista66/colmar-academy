@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Colmar Academy</title>
     <link rel="stylesheet" href="./resources/css/reset.css">
+    <link rel="stylesheet" href="./resources/css/fonts.css">    
     <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 <body>
@@ -35,7 +36,9 @@
 
     <!-- Banner -->
     <div class="banner container">
-        <img src=".\resources\images\banner.jpg" alt="banner">
+        <div class="left-column">
+            <img class="img-resize" src=".\resources\images\banner.jpg" alt="banner">
+        </div>
         <div class="right-column">
             <span class="large">Learn something new everyday</span>
             <span class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
@@ -43,33 +46,52 @@
         </div>
     </div>
 
-    <!-- -->
+    <!-- Information -->
     <div class="information container">
-        <div class="">
-            <img src=".\resources\images\information-main.jpg" alt="">
+        <div class="left-column">
+            <img class="img-resize" src=".\resources\images\information-main.jpg" alt="">
             <span>It doesn't hurt to keep practicing</span>
             <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>  
             <p>Emmanual, Sr Strategist at Hiring.com</p>         
         </div>
-        <div class="orientation">
-            <img src=".\resources\images\information-orientation.jpg" alt="">
-            <span>Orientation date</span>
-            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>     
-        </div>
-        <div class="our-campus">
-            <img src=".\resources\images\information-campus.jpg" alt="">
-            <span>Our Campus</span>
-            <p>Find which campus is close by you</p>     
-        </div>
-        <div class="guest-lecture">
-            <img src=".\resources\images\information-guest-lecture.jpg" alt="">
-            <span>Our guest lecture</span>
-            <p>Join a keynote with Oliver Sack about music in medical treatment.</p>             
+        <div class="right-column">
+             <!-- Orientation information panel -->
+            <div class="orientation panel">
+                <div class="left-column">
+                    <img class="img-resize" src=".\resources\images\information-orientation.jpg" alt="">   
+                </div>
+                <div class="right-column">
+                    <span>Orientation date</span>
+                    <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                </div>
+            </div>
+
+            <!-- Our Campus information panel -->
+            <div class="our-campus panel">
+                <div class="left-column">
+                    <img class="img-resize" src=".\resources\images\information-campus.jpg" alt="campus">
+                </div>
+                <div class="right-column">
+                    <span>Our Campus</span>
+                    <p>Find which campus is close by you</p>            
+                </div>                
+            </div>
+
+            <!-- Guesr Lecture information panel -->
+            <div class="guest-lecture panel">
+                <div class="left-column">
+                    <img class="img-resize" src=".\resources\images\information-guest-lecture.jpg" alt="guest lecture">        
+                </div>
+                <div class="right-column">
+                    <span>Our guest lecture</span>
+                    <p>Join a keynote with Oliver Sack about music in medical treatment.</p>                 
+                </div>                
+            </div>
         </div>
 
     </div>
 
-    <!-- -->
+    <!-- Coursework -->
     <div class="coursework container">
         <div class="subject">
             <img src=".\resources\images\course-software.jpg" alt="Software">
@@ -111,20 +133,32 @@
 
     <!-- Thesis Exibit -->
     <div class="thesis-exibit container">
-        <div>
+        <div class="left-column">
             <video src=".\resources\video\thesis.mp4"></video>
             <span>Reimagine urban</span>
             <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
         </div>
-        <div>
-            <img src=".\resources\images\thesis-fisma.jpg" alt="">
-            <span>Fisma: Design and prototype</span>
-            <p>Designer showcase of new prototype product</p>
-        </div>
-        <div>
-            <img src=".\resources\images\thesis-now-and-then.jpg" alt="">
-            <span>Now and then</span>
-            <p>Research study about New York</p>
+        <div class="right-column">
+            <div class="panel">
+                <div class="left-column">
+                    <img class="img-resize" src=".\resources\images\thesis-fisma.jpg" alt="fisma">
+                </div>
+                <div class="right-column">
+                    <span>Fisma: Design and prototype</span>
+                    <p>Designer showcase of new prototype product</p>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="left-column">
+                    <img class="img-resize" src=".\resources\images\thesis-now-and-then.jpg" alt="now and then">
+                </div>
+                <div class="right-column">
+                    <span>Now and then</span>
+                    <p>Research study about New York</p>
+                </div>
+            </div>
+    
         </div>
     </div>
 

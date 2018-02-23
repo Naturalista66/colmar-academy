@@ -1,19 +1,51 @@
 /* Universal */
-/* Ubuntu: latin alphabet */
-@font-face {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 500;
-    src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v11/4iCv6KVjbNBYlgoCjC3jsGyN.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
+  
 html {
     font-size: 16px;
+    font-family: "Roboto";
 }
 
+/* container take width of view port (up to some max)  */
 .container {
+    display: flex;
     width: 960px;
+}
+
+.container .left-column {
+    height: auto;
+    width: 60%;
+    padding: 2rem 1.5rem;
+}
+
+.container .right-column {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.panel {
+    display: flex;
+}
+
+.panel .left-column  {
+    height: auto;
+    width: 35%;
+    padding: 2rem 1.5rem;
+}
+
+.panel .right-column  {
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Image that resizes to parent container */
+.img-resize {
+    height: auto;
+    width: 100%;
 }
 
 /* Header */
@@ -61,7 +93,7 @@ header {
  nav {
     display: inline-flex;
     align-content: center;
-    font-family: "Ubuntu"; /*TEMP: using Ubuntu font but another woudl be better */
+    font-family: "Roboto"; 
  }
 
  .mobile-menu {
@@ -72,21 +104,27 @@ header {
 
 .banner {
     display: flex;
-    font-family: "Ubuntu"; /*TEMP: using Ubuntu font but another woudl be better */
+    font-family: "Roboto";
     background: darkgray;
 }
 
-.banner img {
+/*.banner .left-column {
     height: auto;
     width: 60%;
     padding: 2rem 1.5rem;
-}
+}*/
 
-.banner div {
+/*.banner img {
+    height: auto;
+    width: 100%;
+}*/
+
+/*.banner .right-column {
     display: flex;
+    width: 40%;
     flex-direction: column;
     justify-content: center;
-}
+}*/
 
 .right-column .large {
     font-size: 3rem;
@@ -94,4 +132,9 @@ header {
 
 .right-column .small {
     font-size: 1.5rem;
+}
+
+.information {
+    display: flex;
+    background-color: white;
 }
