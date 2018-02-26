@@ -1,8 +1,11 @@
-/* Universal */
+/*---------------------------------------------------------------------------*/
+/* Universal styling                                                         */
+/*---------------------------------------------------------------------------*/
   
 html {
     font-size: 16px;
     font-family: "Source Sans Pro";
+    color: rgb(74, 74, 74);
 }
 
 h1 {
@@ -15,8 +18,8 @@ h2 {
     font-weight: bold;
 }
 
-/* container take width of view port (up to some max)  */
-.container {
+
+.container { /* container take width of view port (up to some max)  */
     margin: auto;
     width: auto;
     max-width: 1024px;
@@ -32,13 +35,15 @@ h2 {
     display: flex;
     width: 40%;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     padding-right: 0;
+    padding-bottom: 2rem;
 }
+
 
 .panel {
     display: flex;
-    border: 1px grey solid;
+    border: 1px rgb(175, 175, 175) dotted;
 }
 
 .panel .left-column  {
@@ -52,21 +57,27 @@ h2 {
     width: 65%;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 0;
 }
 
 
-/* Image that resizes to parent container */
-.img-resize {
+.img-resize, .img-resize2 {   /* Image that resizes to parent container */
     height: auto;
     width: 100%;
 }
 
-/* Header */
+.img-resize2 {
+    display: none;
+}
+
+/*---------------------------------------------------------------------------*/
+/* Header                                                                    */
+/*---------------------------------------------------------------------------*/
 
 header {
     display: flex;
     height: 4rem;  
-    background-color: beige;
+    background-color: rgb(247, 247, 227);
     align-items: center;
     justify-content: space-between;
 }
@@ -82,8 +93,12 @@ header {
     height: 2.5rem;
  }
 
- .grey-text {
-     color: darkgray;
+.company-logo span {
+    color: rgb(74, 74, 74);
+}
+
+.company-logo span.grey-text {
+     color: rgb(175, 175, 175);
  }
  
  ul {
@@ -102,6 +117,7 @@ header {
  
  ul li a {
     text-decoration: none;
+    color: rgb(74, 74, 74);
  }
 
  nav {
@@ -113,11 +129,28 @@ header {
     display: none;
 }
 
-/* Banner */
+@media only screen and (max-width: 470px) {
+    .company-logo {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+}
+
+/*---------------------------------------------------------------------------*/
+/* Banner                                                                    */
+/*---------------------------------------------------------------------------*/
 
 .banner {
     display: flex;
-    background: darkgray;
+    color: rgb(74, 74, 74);
+    background: rgb(216, 216, 216);
 }
 
 .banner h1, .banner h2 {
@@ -130,15 +163,34 @@ header {
     font-size: 1.5rem;
     font-style: normal;
     padding: 0.5rem;
-    background: darkslategray;
+    background: rgb(74, 74, 74);
     color: white;
 }
 
-/* Information section styling */
+@media only screen and (max-width: 470px) {
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner .left-column {
+        padding: 0 0 2rem 0;
+        width: 100%;
+    }
+
+    .banner .right-column {
+        align-items: center;
+        width: auto;
+    }
+}
+
+
+/*---------------------------------------------------------------------------*/
+/* Information section styling                                               */
+/*---------------------------------------------------------------------------*/
 
 .information {
     display: flex;
-    background-color: beige;
+    background-color: rgb(247, 247, 227);
 }
 
 .information .left-column h1 {
@@ -146,15 +198,50 @@ header {
     padding-bottom: 1.5rem;
 }
 
+.information .left-column p {
+    padding-bottom: 1.5rem;
+}
+
 .information .right-column h2 {
     padding-bottom: 0.5rem;
 }
-/* Coursework section styling */
+
+.information .right-column p {
+    padding-bottom: 0.5rem;
+}
+
+.information a {
+    text-decoration: none;
+}
+
+/*
+.information .panel h2 {
+    padding-bottom: 0.5rem;
+}*/
+
+@media only screen and (max-width: 470px) {
+    .information .left-column {
+        display: none;
+    }
+
+    .information .img-resize {
+        display: none;
+    }
+    
+    .information .img-resize2 {
+        display: inline;
+    }
+}
+
+
+/*---------------------------------------------------------------------------*/
+/* Coursework section styling                                                */
+/*---------------------------------------------------------------------------*/
 
 .coursework {
     display: flex;
     flex-direction: column;
-    background-color: lightgrey;
+    background-color: rgb(216, 216, 216);
 }
 
 .coursework h1 {
@@ -170,7 +257,7 @@ header {
 }
 
 .subject {
-    background-color: white;
+    background-color: rgb(247, 247, 227);
     /* Space available to subject panels is the width of parent container less 
        padding between the panels. This value is divided by number of panels in
        a row to get the width of an idividual panel */
@@ -186,12 +273,26 @@ header {
     padding: 1rem 1rem 1.5rem 1rem;
 }
 
-/* Thesis section styling */
+.info h2 {
+    padding-bottom: 0.5rem;
+}
+
+.info span {
+    padding-bottom: 0.5rem;
+}
+
+.info p {
+    padding-top: 0.5rem;
+}
+
+/*---------------------------------------------------------------------------*/
+/* Thesis section styling                                                    */
+/*---------------------------------------------------------------------------*/
 
 .thesis-exibit {
     display: flex;
     flex-direction: column;
-    background-color: beige;
+    background-color: rgb(247, 247, 227);
 }
 
 .thesis-exibit h1 {
@@ -199,23 +300,52 @@ header {
     padding: 2rem 0;
 }
 
-.thesis-exibit h2 {
-    padding-top: 1.5rem;
-    padding-bottom: 0.5rem
-}
-
 .thesis-exibit video {
     width: 100%;
     height: auto; 
 }
 
+.thesis-exibit video + h2 {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem
+}
+
+
 .theses {
     display: flex;
 }
 
-/* Footer styling */
+.theses > .left-column {
+    padding-top: 0;
+}
+
+.theses > .right-column {
+    justify-content: flex-start;
+}
+
+.theses .panel h2 {
+    padding-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 470px) {
+    .theses .left-column h2, .theses .left-column p {
+        display: none;    
+    }
+    .theses .right-column {
+        display: none;
+    }
+}
+
+
+/*---------------------------------------------------------------------------*/
+/* Footer styling                                                            */
+/*---------------------------------------------------------------------------*/
 
 footer {
-    border-top: 0.5px solid gray;
-    background-color: beige;    
+    display: flex;
+    justify-content: space-between;
+    font-size: .9rem;
+    padding: 1rem 0 2rem 1.5rem;
+    border-top: 1px rgb(175, 175, 175) dotted;
+    background-color: rgb(247, 247, 227);    
 }
