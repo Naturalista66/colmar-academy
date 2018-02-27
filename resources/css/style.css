@@ -173,13 +173,19 @@ header {
     }
 
     .banner .left-column {
-        padding: 0 0 2rem 0;
+        padding: 0;
         width: 100%;
     }
 
     .banner .right-column {
         align-items: center;
-        width: auto;
+        padding: 2rem 1rem;
+        width: 100%;
+    }
+
+    .banner .button {
+        align-self: center;
+        width: calc(100% - 2rem);
     }
 }
 
@@ -214,22 +220,23 @@ header {
     text-decoration: none;
 }
 
-/*
-.information .panel h2 {
-    padding-bottom: 0.5rem;
-}*/
-
 @media only screen and (max-width: 470px) {
     .information .left-column {
         display: none;
     }
 
-    .information .img-resize {
-        display: none;
-    }
-    
     .information .img-resize2 {
-        display: inline;
+        display: flex;
+        padding-bottom: 1rem;
+    }
+
+    .information .right-column {
+        width: 100%;
+    }
+
+    .information .panel > .right-column {
+
+        padding: 1rem;
     }
 }
 
@@ -248,6 +255,7 @@ header {
     text-align: center;
     padding: 2rem 0;
 }
+
 .subjects-row {
     flex-basis: auto;
     display: flex;
@@ -285,6 +293,32 @@ header {
     padding-top: 0.5rem;
 }
 
+@media only screen and (max-width: 470px) {
+    .coursework, .subjects-row {
+        background-color: rgb(247, 247, 227); 
+    }
+
+    .subjects-row {
+        flex-direction: column;
+        margin: 0 1rem;
+    }
+
+    .subject {
+        background-color: rgb(216, 216, 216);
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .info > h2 {
+        padding: 0;
+    }
+
+    .subject > .img-resize, .info > span, .info > p
+    {
+        display: none;
+    }
+}
 /*---------------------------------------------------------------------------*/
 /* Thesis section styling                                                    */
 /*---------------------------------------------------------------------------*/
@@ -328,6 +362,12 @@ header {
 }
 
 @media only screen and (max-width: 470px) {
+    .theses .left-column {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%
+    }
+
     .theses .left-column h2, .theses .left-column p {
         display: none;    
     }
@@ -358,4 +398,14 @@ footer p {
 footer nav {
     padding-top: 1rem;
     align-items: flex-start;
+}
+
+@media only screen and (max-width: 470px) {
+    font {
+        height: 3rem;
+    }
+
+    footer nav {
+        display: none;
+    }
 }
