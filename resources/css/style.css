@@ -22,7 +22,7 @@ h2 {
 .container { /* container take width of view port (up to some max)  */
     margin: auto;
     width: auto;
-    max-width: 1024px;
+    max-width: 1440px;
 }
 
 .container .left-column {
@@ -99,37 +99,45 @@ header {
 
 .company-logo span.grey-text {
      color: rgb(175, 175, 175);
- }
+}
  
- nav {
+nav {
     display: inline-flex;
     align-content: center;
- }
+}
 
- ul {
+ul {
     display: flex;
     list-style-type: none;
     align-items: center;
- }
+}
 
- ul li {
+ul li {
      padding-left: 1rem;
- }
+}
 
- ul li:last-child {
+ul li:last-child {
     padding-right: 1.5rem;
- }
+}
  
- ul li a {
+ul li a {
     text-decoration: none;
     color: rgb(74, 74, 74);
- }
+}
+
+a:hover {
+     color: red;
+}
 
  .mobile-menu {
     display: none;
 }
 
 @media only screen and (max-width: 470px) {
+    header nav {
+        display: block;
+        width: 100%;
+    }
     .company-logo {
         display: none;
     }
@@ -140,6 +148,7 @@ header {
 
     .mobile-menu {
         display: flex;
+        justify-content: space-around;
     }
 }
 
@@ -162,9 +171,14 @@ header {
     text-align: center;
     font-size: 1.5rem;
     font-style: normal;
+    border: none;
     padding: 0.5rem;
     background: rgb(74, 74, 74);
     color: white;
+}
+
+.button:hover {
+    background-color: sienna;
 }
 
 @media only screen and (max-width: 470px) {
@@ -180,12 +194,12 @@ header {
     .banner .right-column {
         align-items: center;
         padding: 2rem 1rem;
-        width: 100%;
+        width: auto;
     }
 
     .banner .button {
         align-self: center;
-        width: calc(100% - 2rem);
+        width: 100%;
     }
 }
 
@@ -219,6 +233,12 @@ header {
 .information a {
     text-decoration: none;
 }
+
+.information .panel:last-child
+{
+    background-color: rgb(216, 216, 216);
+}
+
 
 @media only screen and (max-width: 470px) {
     .information .left-column {
@@ -273,6 +293,9 @@ header {
     margin-right: 2rem;
 }
 
+.subject:hover {
+    border: 1px solid blue;
+}
 .subject:last-child {
     margin-right: 0;
 }
@@ -355,6 +378,11 @@ header {
 
 .theses > .right-column {
     justify-content: flex-start;
+}
+
+.theses .panel:first-child
+{
+    background-color: rgb(216, 216, 216);
 }
 
 .theses .panel h2 {
