@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header: Includes school logo and menu -->
     <header class="container">
         <!-- Logo -->
         <div class="company-logo">
@@ -19,12 +19,14 @@
         </div>
         <!-- Menu  -->
         <nav>
+            <!-- desktop menu -->
             <ul class="menu">
                 <li><a href="#">On campus</a></li>
                 <li><a href="#">Online</a></li>
                 <li><a href="#">For companies</a></li>
                 <li><a href="#">Sign in</a></li>
             </ul>
+            <!-- mobile menu uses icons -->
             <ul class="mobile-menu">
                 <li><a href="#"><img src="./resources/images/ic-logo.svg" alt="logo"></a></li>
                 <li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="logo"></a></li>
@@ -33,6 +35,7 @@
             </ul>        
         </nav>
     </header>
+
 
     <!-- Banner -->
     <div class="banner container">
@@ -45,6 +48,7 @@
             <button class="button" type="button">Start here</button>    
         </div>
     </div>
+
 
     <!-- Information -->
     <div class="information container">
@@ -97,10 +101,14 @@
 
     </div>
 
+
     <!-- Coursework -->
     <div class="coursework container">
         <h1>Start learning</h1>
+
+        <!-- first row of subject areas -->
         <div class="subjects-row">
+
             <div class="subject">
                 <img class="img-resize" src=".\resources\images\course-software.jpg" alt="Software">
                 <div class="info">
@@ -124,12 +132,12 @@
                 <div class="info">
                     <h2>Design</h2>
                     <span>COURSES</span>
-                    <p>User Expierence Deisgn, User Research, Visual Design</p>
+                    <p>User Experience Design, User Research, Visual Design</p>
                 </div>
             </div>            
         </div>
 
-
+        <!-- second row of subject areas -->
         <div class="subjects-row">
             <div class="subject">
                 <img class="img-resize" src=".\resources\images\course-data.jpg" alt="Data">
@@ -162,46 +170,48 @@
 
     </div>
 
+
     <!-- Thesis Exibit -->
     <div class="thesis-exibit container">
         <h1>Thesis exibits</h1>
         <div class="theses">
 
-                <div class="left-column">
-                    <video autoplay muted loop>
-                        <source src=".\resources\videos\thesis.mp4" type="video/mp4"> 
-                        Your browser does not support the video tag.   
-                    </video>
+            <div class="left-column">
+                <video autoplay muted loop controls>
+                    <source src=".\resources\videos\thesis.mp4" type="video/mp4"> 
+                    Your browser does not support the video tag.   
+                </video>
 
-                    <h2 class="desktop">Reimagine urban</h2>
-                    <p class="desktop">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+                <h2 class="desktop">Reimagine urban</h2>
+                <p class="desktop">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            </div>
+
+            <div class="right-column">
+                <div class="panel">
+                    <div class="left-column">
+                        <img class="img-resize" src=".\resources\images\thesis-fisma.jpg" alt="Fisma">
+                    </div>
+                    <div class="right-column">
+                        <h2>Fisma: Design and prototype</h2>
+                        <p>Designer showcase of new prototype product</p>
+                    </div>
                 </div>
-
-                <div class="right-column">
-                    <div class="panel">
-                        <div class="left-column">
-                            <img class="img-resize" src=".\resources\images\thesis-fisma.jpg" alt="Fisma">
-                        </div>
-                        <div class="right-column">
-                            <h2>Fisma: Design and prototype</h2>
-                            <p>Designer showcase of new prototype product</p>
-                        </div>
+    
+                <div class="panel">
+                    <div class="left-column">
+                        <img class="img-resize" src=".\resources\images\thesis-now-and-then.jpg" alt="Now and then">
                     </div>
+                    <div class="right-column">
+                        <h2>Now and then</h2>
+                        <p>Research study about New York</p>
+                    </div>
+                </div>
         
-                    <div class="panel">
-                        <div class="left-column">
-                            <img class="img-resize" src=".\resources\images\thesis-now-and-then.jpg" alt="Now and then">
-                        </div>
-                        <div class="right-column">
-                            <h2>Now and then</h2>
-                            <p>Research study about New York</p>
-                        </div>
-                    </div>
-            
-                </div>       
+            </div>       
         </div>
     </div>
 
+    
     <!-- Footer -->
     <footer class="container">
         <p>© 2016 Colmar Academy. All rights reserved</p>

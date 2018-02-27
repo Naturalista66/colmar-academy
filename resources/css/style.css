@@ -61,7 +61,8 @@ h2 {
 }
 
 
-.img-resize, .img-resize2 {   /* Image that resizes to parent container */
+.img-resize, 
+.img-resize2 {   /* Image that resizes to parent container */
     height: auto;
     width: 100%;
 }
@@ -133,7 +134,7 @@ a:hover {
     display: none;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 700px) {
     header nav {
         display: block;
         width: 100%;
@@ -181,7 +182,7 @@ a:hover {
     background-color: sienna;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 700px) {
     .banner {
         flex-direction: column;
     }
@@ -240,7 +241,7 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 700px) {
     .information .left-column {
         display: none;
     }
@@ -316,7 +317,7 @@ a:hover {
     padding-top: 0.5rem;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 700px) {
     .coursework, .subjects-row {
         background-color: rgb(247, 247, 227); 
     }
@@ -337,7 +338,9 @@ a:hover {
         padding: 0;
     }
 
-    .subject > .img-resize, .info > span, .info > p
+    .subject > .img-resize, 
+    .info > span, 
+    .info > p
     {
         display: none;
     }
@@ -389,14 +392,15 @@ a:hover {
     padding-bottom: 0.5rem;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 700px) {
     .theses .left-column {
         padding-left: 0;
         padding-right: 0;
         width: 100%
     }
 
-    .theses .left-column h2, .theses .left-column p {
+    .theses .left-column h2, 
+    .theses .left-column p {
         display: none;    
     }
     .theses .right-column {
@@ -428,7 +432,7 @@ footer nav {
     align-items: flex-start;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 700px) {
     font {
         height: 3rem;
     }
